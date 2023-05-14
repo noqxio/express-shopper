@@ -1,7 +1,9 @@
 {
   "name": "express-shopper",
   "version": "1.0.0",
-  "description": "",
+  "author": "Noqx Engineering <engineering@noqx.io>",
+  "description": "Express 4 with TypeScript and DynamoDB",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec ts-node src/index.ts",
@@ -12,8 +14,6 @@
     "tsc": "tsc --noEmit",
     "test": "jest"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
