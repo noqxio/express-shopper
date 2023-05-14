@@ -11,8 +11,7 @@
     "ddb:ls-table": "aws dynamodb list-tables --endpoint-url http://localhost:8000 --region local",
     "ddb:create-table": "npx ts-node ddb/ddb-create-table.ts",
     "ddb:delete-table": "npx ts-node ddb/ddb-delete-table.ts PRODUCTS",
-    "tsc": "tsc --noEmit",
-    "test": "jest"
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
