@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:8080
+## Ping service
+GET {{baseUrl}}/
+
+### Get products
+GET {{baseUrl}}/products
+Accept: application/json
+
+### Post milk
+POST {{baseUrl}}/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": 1,
+    "name": "Milk",
+    "price": 1.5
+}
+
+### Post bread
+POST {{baseUrl}}/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": 2,
+    "name": "Bread",
+    "price": 1
+}
