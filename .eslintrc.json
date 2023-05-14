@@ -1,13 +1,12 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "eslint-plugin-import", "prettier"],
+  "plugins": ["@typescript-eslint", "eslint-plugin-import", "prettier"],
   "env": {
     "browser": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -28,21 +27,7 @@
         "allowTemplateLiterals": true
       }
     ],
-    "react/jsx-filename-extension": [
-      "warn",
-      {
-        "extensions": [".jsx", ".tsx"]
-      }
-    ],
-    "react/prop-types": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "object-curly-spacing": ["error", "always"],
     "no-shadow": ["error", { "builtinGlobals": false, "hoist": "functions", "allow": [] }]
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }

@@ -17,7 +17,7 @@ export const postProducts = async (req: Request, res: Response) => {
       PRODUCT_PRICE: { N: price }
     }
   }
-  ddb.putItem(params, function (err: any, data?: AWS.PutItemCommandOutput) {
+  ddb.putItem(params, function (err: Error, data?: AWS.PutItemCommandOutput) {
     if (err) {
       console.log('Error', err)
     } else {
